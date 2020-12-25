@@ -1,0 +1,56 @@
+ .header{
+     display: flex;
+     height: 80px; 
+     align-items: center;
+     box-shadow: 1px 1px 3px #ccc;
+     width: 1000px;
+     margin: auto;
+     justify-content: space-between;
+     
+
+     &__right--input {
+       height: 30px;
+       border: 1px solid #ccc;
+       width: 258px;
+       border-radius: 8px;
+
+       &:focus {
+           outline: none;
+       }
+     }
+
+     &__right--button {
+        height: 30px;
+        background-color: blue;
+        border: 1px solid blue;
+        
+        border: none; 
+        padding: 0 10px;
+        border-radius: 4px;
+        color: #fff;
+        margin-left: 6px;
+        cursor: pointer;
+      }
+
+       &__right--form{
+           display: inline-block;
+           position: relative;
+       }
+
+        &__right--btn{
+            background-color: #fff;
+            border: none;
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            cursor: pointer;
+       
+        &:focus {
+            outline: none;
+          
+        }
+    }
+
+       
+
+ }
