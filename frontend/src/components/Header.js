@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import './styles/Header.scss';
+import {Link} from 'react-router-dom';
+
 
 export default class Header extends Component {
     render() {
         return (
             <div className="header">
                  <div className="header__left">
-                   <img src="./assets/Logo/Logo-brainflix.png" alt="Logo" />
+                   <Link to="/"><img src="./assets/Logo/Logo-brainflix.png" alt="Logo" /></Link>
                  </div>
                  <div className="header__right">
                    <form className="header__right--form">
@@ -18,7 +20,7 @@ export default class Header extends Component {
                     
                    </form>
 
-                   <button className="header__right--button"  >+Upload</button>
+                   <Link to ="/upload"><button className="header__right--button">+Upload</button> </Link>
                  </div>
             </div>
         )
