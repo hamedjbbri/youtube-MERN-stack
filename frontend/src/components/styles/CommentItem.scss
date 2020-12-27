@@ -1,0 +1,45 @@
+.commentItem {
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+
+    &__left {
+
+       width: 10%;
+
+        &--avatar {
+          width: 40px;
+          height: 40px;
+          margin: 5px;
+          background-color: #ddd;
+          border-radius: 100%;
+          display: inline-block; 
+        }
+    }
+
+    &__middle {
+
+        width: 80%;
+        &--date {
+            color: #ccc; 
+        }
+        
+        &--name{
+           font-weight: bold;
+           
+           margin-right: 60px;
+        }
+
+    }
+
+    &__right{
+        width: 10%;
+        text-align: center;
+        
+      &--delete {
+          color: rgb(250, 125, 125);
+          cursor: pointer;
+          
+      }
+    }
+}
