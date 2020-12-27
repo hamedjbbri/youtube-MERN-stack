@@ -6,8 +6,7 @@ import Content from './Content';
 
 export default function Main() {
     return (
-        <div>
-            <Header />
+        <div> 
             <VideoPlayer />
             <Content />
 

@@ -1,0 +1,60 @@
+.upload {
+    width: 1000px;
+    margin: auto;
+
+    h2 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+
+    &__video {
+        display: flex;
+
+        &--left {
+          width: 25%;
+          img{
+            margin-top: 18px;
+            border-radius: 3px;
+        }
+        }
+
+        &--right {
+            width: 75%;
+
+        input,textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 2%;
+            margin-left: 10px;
+        }
+
+            input{
+               height: 30px;
+            }
+
+             textarea{
+                height: 100px;
+            }
+
+            label {
+                margin-left: 10px;
+            }
+
+            .btnpublish, .btncancle {
+                height: 30px; 
+                background-color: blue;
+                border: 1px solid blue;
+                margin-top: 10px;
+                border: none; 
+                padding: 0 20px;
+                border-radius: 4px;
+                color: #fff;
+                margin-left: 6px;
+                cursor: pointer;
+                float: right;
+            }
+
+          
+        }
+    }
+}
