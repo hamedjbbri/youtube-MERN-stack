@@ -11,14 +11,15 @@ export default class Comments extends Component {
              comments</p>
 
              <div className="comments__input">
-               <img src="./assets/images/Mohan-muruge.jpg" className="comments__input--avatar" />
-               <input type="text" className="comments__input--input" />
-               <button className="comments__input--btn">Comment</button>
-             </div>
+             <form> <img src="./assets/images/Mohan-muruge.jpg" alt="avatar" className="comments__input--avatar" />
+               
+                <input type="text" className="comments__input--input" />
+                <button className="comments__input--btn">Comment</button>
+             
+             </form>
+               </div>
 
-             <CommentItem />
-             <CommentItem />
-             <CommentItem />
+             <CommentItem /> 
             </div>
         )
     }

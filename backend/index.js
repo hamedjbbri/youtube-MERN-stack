@@ -2,6 +2,11 @@ const express = require('express'),
       bodyParser = require('body-parser'), 
       app = express(),
       PORT = 8080,
+      cors = require('cors');
+ 
+ 
+      app.use(cors());
+
       videoList = require('./data/videoList.json'),      
       videoDetail = require('./data/videoDetail');
 
