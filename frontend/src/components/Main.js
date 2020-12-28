@@ -10,23 +10,35 @@ export default class Main extends Component {
            oneVideo: {}
        }
 
-
-      componentDidUpdate(){
+       componentDidMount() {
+        axios.get(`http://localhost:8080/videos/1af0jruup5gu`)
+            .then(res => {
+                this.setState({
+                    oneVideo: res.data
+                })
+            })
+       }
+      componentDidUpdate(prevProps, prevState){
              const id = this.props.match.params.id;
 
+             
+         if(prevState.oneVideo.id !== id){
              axios.get(`http://localhost:8080/videos/${id}`)
              .then(res => {
                  this.setState({
                      oneVideo: res.data
                  })
              })
+            }
       }
 
     render() {
+
+        
         return (
             <div>
-            <VideoPlayer />
-            <Content />
+                <VideoPlayer oneVideo={this.state.oneVideo} />
+                <Content oneVideo={this.state.oneVideo} />
             </div>
         )
     }

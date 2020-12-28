@@ -6,9 +6,9 @@ class VideoPlayer extends Component {
         return (
             <div className="videoContainer">
             <video className="videoContainer__video" 
-            poster="./assets/Images/video-list-0.jpg"
+            poster= {this.props.oneVideo.image}
             controls>
-             <source src="./assets/Video/video.mp4" type="video/mp4" />
+             <source src="../assets/Video/video.mp4" type="video/mp4" />
              
           </video> 
                          

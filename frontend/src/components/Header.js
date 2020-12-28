@@ -8,7 +8,7 @@ export default class Header extends Component {
         return (
             <div className="header">
                  <div className="header__left">
-                   <Link to="/"><img src="./assets/Logo/Logo-brainflix.png" alt="Logo" /></Link>
+                   <Link to="/"><img src="../assets/Logo/Logo-brainflix.png" alt="Logo" /></Link>
                  </div>
                  <div className="header__right">
                    <form className="header__right--form">

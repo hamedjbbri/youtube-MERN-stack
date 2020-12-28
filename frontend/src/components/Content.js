@@ -5,13 +5,16 @@ import VideoList from './VideoList';
 import Comments from './Comments';
 
 export default class Content extends Component {
+
     render() {
+    
+    const oneVideo = this.props.oneVideo
         return (
             <div className="content">
             
                 <div className="content__left" >
-                     <VideoDescription />
-                     <Comments />
+                     <VideoDescription oneVideo={oneVideo} />
+                     <Comments oneVideo={oneVideo} />
                 </div>
                 
                 <div className="content__right" >
