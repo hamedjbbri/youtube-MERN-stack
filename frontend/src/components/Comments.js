@@ -10,7 +10,7 @@ export default class Comments extends Component {
 
         const passedComments = comments || []
 
-        const commentJSX = passedComments.map(item =>  <CommentItem key={item.id} item = {item} />)
+        const commentJSX = passedComments.map(item =>  <CommentItem key={item.id} item = {item} removeComment={this.props.removeComment} />)
      
        
 

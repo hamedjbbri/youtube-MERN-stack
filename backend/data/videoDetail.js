@@ -31,14 +31,7 @@ const detailedVideos = [
                 id: "993f950f-df99-48e7-bd1e-d95003cc98f1",
                 likes: 0,
                 timestamp: 1542262984046
-            },
-            {
-                name: "Theodore Duncan",
-                comment: "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
-                id: "993f950f-df99-48e7-bd1e-d95003cc98f1",
-                likes: 0,
-                timestamp: 1542262984046
-            }
+            } 
         ]
     },
     {

@@ -2,7 +2,19 @@ import React, { Component } from 'react'
 import './styles/VideoDescription.scss';
 
 export default class VideoDescription extends Component {
-    render() {
+    
+  convertTimeStamp = (timestamp) => {
+    const myDate = new Date(timestamp);
+    return myDate.getFullYear() + "-" + (myDate.getMonth()+1) + "-" + myDate.getDate() 
+  
+    
+  }
+  
+
+  render() {
+
+
+       
 
         const {channel, comments, description, duration, id, image, likes, timestamp, title, views} = this.props.oneVideo
 
@@ -14,7 +26,7 @@ export default class VideoDescription extends Component {
               <div className="videoDescription__details" >
                 <div className="videoDescription__details--left">
                   <span><b>{channel}</b></span>
-                  <span>{timestamp}</span>
+                  <span>{this.convertTimeStamp(timestamp)}</span>
                 </div>
 
                 <div className="videoDescription__details--right">

@@ -32,13 +32,24 @@ export default class Main extends Component {
             }
       }
 
+
+     removeComment = (commentId) => {
+         axios.delete('http://localhost:8080/delete', {data: {videoId: this.state.oneVideo.id , id: commentId }})
+         .then(response =>{
+             this.setState({
+                 oneVideo : {...this.state.oneVideo, comments: response.data}
+             })
+         })
+     }
+
+
     render() {
 
         
         return (
             <div>
                 <VideoPlayer oneVideo={this.state.oneVideo} />
-                <Content oneVideo={this.state.oneVideo} />
+                <Content oneVideo={this.state.oneVideo}  removeComment = {this.removeComment} />
             </div>
         )
     }
